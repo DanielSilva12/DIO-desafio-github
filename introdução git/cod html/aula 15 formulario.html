@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+
+ <head>
+
+   <title>Formulario</title>
+   <meta charset="utf-8">
+
+ </head>
+
+ <body> 
+
+ <form action="cadastro.php" method="get">
+ 
+    <fieldset>
+    
+        <legend>informações pessoais</legend>
+
+    NOME:<br>
+    <input type="text" name="nome" required> <br> <!--função "required" é para ser um campo obrigatorio-->
+
+    senha:<br>    
+    <input type="password" name="senha" maxlength="8"><br> <!--função "maxlength" serve para limitar o numero de caracteres-->
+    
+    Email:<br>
+    <input type="email" name="email" required placeholder="@gmail.com"><br>
+    Time:<br>
+    <input type="radio" name="Time" value="Corinthians">Corinthians <br>
+    <input type="radio" name="Time" value="Palmeiras"> Palmeiras <br>
+    <input type="radio" name="Time" value="São Paulo"> São Paulo <br>
+    <input type="radio" name="Time" value="Santos"> Santos <br>
+
+    Cores:<br>
+    <input type="checkbox" name="cores" value="roxo">roxo <br>
+    <input type="checkbox" name="cores" value="verde"> verde <br>
+    <input type="checkbox" name="cores" value="vermelho"> vermelho <br>
+    <input type="checkbox" name="cores" value="preto"> preto <br>
+
+    Quantidade: <br>
+    <input type="number" name="Quantidade" min="0" max="1000" step="2"><br> <!-- tem a função "step" se inserida vai pular a numeração na quantidade informada-->
+    <input type="range" name="Quantidade"><br>
+
+    Cores:<br>
+    <input type="color" name="cor"><br>
+
+
+    <input type="submit" name="btn-enviar" value="Enviar"><br>
+
+    </fieldset>
+
+</form> 
+
+</body>
+
+</html>
